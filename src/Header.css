@@ -1,0 +1,47 @@
+.header__icon{
+    object-fit: contain;
+    height: 100px;
+    margin-left: 20px;
+}
+
+.header{
+    /* Everything goes into a row  */
+    display: flex;
+    /* Space Between Components */
+    justify-content: space-between;
+    align-items: center;
+    /* The header sticks to the top even when we scroll down the page */
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    width: 100%;
+}
+
+.header__center{
+    display: flex;
+    /* Center Element can take up as much space */
+    flex: 1;
+    align-items: center;
+    max-width: fit-content;
+    padding: 10px;
+    height: 30px;
+    border: 1px solid lightgray;
+    border-radius: 999px;
+}
+
+.header__center > input {
+    border: none;
+    /* width: 250px; */
+    padding: 10px;
+    /* To make the input field without outline */
+    outline-width: 0;
+}
+
+.header__right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 15vw;
+    margin-right: 80px;
+}
